@@ -1,0 +1,165 @@
+.survey-form {
+  width: 100vh;
+  background: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.survey-form h1 {
+  text-align: center;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+
+.additional-questions {
+  margin-top: 30px;
+}
+
+.additional-questions h2 {
+  margin-bottom: 15px;
+  color: #4a90e2;
+}
+
+.additional-questions .form-group {
+  margin-bottom: 15px;
+}
+
+.submit-btn {
+  display: block;
+  width: fit-content;
+  padding: 12px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #357ab7;
+}
+/* reponsive design */
+@media (max-width: 768px) {
+  .survey-form {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .survey-form {
+    padding: 10px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 10px;
+  }
+
+  .submit-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+.response-message {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 50px;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+.response-message h2 {
+  font-weight: bold;
+  color: #4a90e2;
+  margin-bottom: 3px;
+}
+.response-message p {
+  margin-bottom: 3px;
+}
+
+.submitted-data p {
+  box-shadow: inset;
+  padding: 3px;
+  border-bottom: 1px solid black;
+  border-radius: 2px;
+}
+
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ccc;
+  border-top-color: #1790b8;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
