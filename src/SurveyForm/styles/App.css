@@ -1,7 +1,7 @@
 .survey-form {
-  width: 100vh;
-  background: #fff;
-  margin-top: 20px;
+  width: 60%;
+  background: #d5e3f3;
+  margin: 10px auto;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -32,7 +32,7 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   box-sizing: border-box;
-  transition: border-color 0.3s;
+  transition: rgb(0, 140, 255) 0.3s;
 }
 
 .form-group input:focus,
@@ -81,33 +81,6 @@
 .submit-btn:hover {
   background-color: #357ab7;
 }
-/* reponsive design */
-@media (max-width: 768px) {
-  .survey-form {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .survey-form {
-    padding: 10px;
-  }
-
-  .form-group label {
-    font-size: 14px;
-  }
-
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    padding: 10px;
-  }
-
-  .submit-btn {
-    padding: 10px;
-    font-size: 14px;
-  }
-}
 
 .response-message {
   display: flex;
@@ -117,7 +90,9 @@
   align-items: center;
   border: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 500px;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
 }
 
 .response-message h2 {
@@ -125,6 +100,7 @@
   color: #4a90e2;
   margin-bottom: 3px;
 }
+
 .response-message p {
   margin-bottom: 3px;
 }
@@ -163,3 +139,4 @@
     transform: rotate(360deg);
   }
 }
+
